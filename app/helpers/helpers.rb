@@ -4,6 +4,7 @@ class Helpers
         # arg is also a hash {:user_id=>1}
         #binding.pry
     end
+    
     def self.current_user(session)
         # arg is a hash {:user_id=>1}
         @user = User.find_by_id(session[:user_id])
